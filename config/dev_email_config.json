@@ -1,0 +1,8 @@
+{
+    "FROM_EMAIL": "<YOUR_EMAIl_ID>",
+    "EMAIL_PASSWORD": "<YOUR_PASSWORD>",
+    "PORT": ":587",
+    "HOST": "smtp.gmail.com",
+    "TO_EMAIL": "<YOUR_EMAIl_ID>",
+    "SUBJECT": "Email from Notification App"
+  }

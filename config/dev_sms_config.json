@@ -1,0 +1,7 @@
+{
+    "ACCOUNT_SID": "<YOUR_TWILIO_SID>",
+    "AUTH_TOKEN": "<YOUR_TWILIO_AUTH_TOKEN>",
+    "URL": ":https://api.twilio.com/2010-04-01/Accounts/",
+    "TO_PHONE": "<RECIPIENT_PHONE_NUMBER>",
+    "FROM_PHONE": "YOUR_TWILIO_PHONE_NUMBER"
+  }
