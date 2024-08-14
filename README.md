@@ -29,15 +29,16 @@ Create Message Endpoint: http://localhost:10000/CreateMessage
 HTTP Method: POST
 You can test the CreateMessage endpoint with the following JSON body:
 
-json
-
+```json
 {
-    "Id": "1", 
-    "Title": "Newly Created Post", 
-    "desc": "The description for my new post", 
+    "Id": "1",
+    "Title": "Newly Created Post",
+    "desc": "The description for my new post",
     "channel": "SLACK",
-    "content": "My post content" 
+    "content": "My post content"
 }
+```
+
 
 ## RabbitMQ Server Details
 You can access your RabbitMQ server using the following details:
