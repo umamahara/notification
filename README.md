@@ -24,9 +24,9 @@ Make sure you are in the correct directory when you run this command to avoid an
 ## Testing the Application
 Once the application is running, you can test it using the following endpoints:
 
-Base URL: http://localhost:10000/
-Create Message Endpoint: http://localhost:10000/CreateMessage
-HTTP Method: POST
+* Base URL: http://localhost:10000/
+* Create Message Endpoint: http://localhost:10000/CreateMessage
+* HTTP Method: POST
 You can test the CreateMessage endpoint with the following JSON body:
 
 ```json
@@ -43,9 +43,10 @@ You can test the CreateMessage endpoint with the following JSON body:
 ## RabbitMQ Server Details
 You can access your RabbitMQ server using the following details:
 
-Management URL: http://localhost:15672/#/
-Username/Password:
-Username: guest
-Password: guest
+* Management URL: http://localhost:15672/#/
+* Username/Password:
+  * Username: guest
+  * Password: guest
 ## Setting Up Incoming Webhook in Slack
-For instructions on setting up an incoming webhook in Slack, you can refer to the following video: [Setting Up Incoming Webhook in Slack](https://www.youtube.com/watch?v=6NJuntZSJVA)
+For instructions on setting up an incoming webhook in Slack, you can refer to the following video:
+* [Setting Up Incoming Webhook in Slack](https://www.youtube.com/watch?v=6NJuntZSJVA)
