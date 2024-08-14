@@ -1,33 +1,25 @@
 # Dockerfile References: https://docs.docker.com/engine/reference/builder/
 
-# Start from golang:1.12-alpine base image
-FROM golang:1.12-alpine
+# Step 1: Build Stage for Golang Application
+FROM golang:latest
 
-# The latest alpine images don't have some tools like (`git` and `bash`).
-# Adding git, bash and openssh to the image
-RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
 
 # Add Maintainer Info
 LABEL maintainer="Uma Mahara <uma.mahara7@gmail.com>"
 
-# Set the Current Working Directory inside the container
-WORKDIR /app
+# Set the working directory in the container
+WORKDIR /application
 
-# Copy go mod and sum files
+# Copy go modules files
 COPY go.mod go.sum ./
 
 # Download all dependancies. Dependencies will be cached if the go.mod and go.sum files are not changed
 RUN go mod download
 
-# Copy the source from the current directory to the Working Directory inside the container
+# Copy the entire project
 COPY . .
 
-# Build the Go app
-RUN go build -o main .
+# Build the Go application
+RUN go build -o main
 
-# Expose port 8080 to the outside world
-EXPOSE 10000
-
-# Run the executable
 CMD ["./main"]
