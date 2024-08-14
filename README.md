@@ -18,7 +18,7 @@ To execute the application, follow these steps in the `/notification` directory:
    ```bash
    docker-compose up --build
 
-### Note: 
+#### Note: 
 Make sure you are in the correct directory when you run this command to avoid any issues
 
 ## Testing the Application
